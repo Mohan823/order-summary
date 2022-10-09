@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Order Summary - Solution](https://github.com/Mohan823/order-summary.git)
-- Live Site URL: [Order Summary - Live](https://mohan823.github.io/product-preview-card-component/)
+- Live Site URL: [Order Summary - Live](https://mohan823.github.io/order-summary/)
 
 ## My process
 
