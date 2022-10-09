@@ -1,0 +1,293 @@
+:root {
+    --ff-primary: 'Red Hat Display', sans-serif;
+
+    --ff-body: var(--ff-primary);
+
+
+    --fw-500: 500;
+    --fw-700: 700;
+    --fw-900: 900;
+
+
+    --fs-500: 1rem;
+    --fs-700: 1.5rem;
+
+
+    --clr-accent-400: hsl(225, 100%, 94%);
+    --clr-secondary-500: hsl(245, 75%, 52%);
+
+    --clr-neutral-100: white;
+    --clr-neutral-200: rgb(245, 247, 255);
+    --clr-neutral-700: hsl(224, 23%, 55%);
+    --clr-neutral-800: hsl(223, 47%, 23%);
+
+
+    --size-500: 1rem;
+    --size-550: 1.5rem;
+    --size-600: 2rem;
+    --size-700: 3rem;
+    --size-800: 4rem;
+}
+
+
+/* Css Reset */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* general class */
+
+body {
+    box-sizing: border-box;
+    font-family: var(--ff-body);
+    font-size: var(--fs-500);
+    background: no-repeat top / contain url(images/pattern-background-desktop.svg);
+    background-color: var(--clr-accent-400);
+}
+
+footer {
+    padding: var(--size-600);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: var(--size-500);
+}
+
+h1 {
+    font-size: var(--fs-700);
+    font-weight: var(--fw-900);
+    color: var(--clr-neutral-800);
+}
+
+p {
+    color: var(--clr-neutral-700);
+    text-align: center;
+}
+
+
+/* utility classes */
+
+.container {
+    background-color: var(--clr-neutral-100);
+    width: min-content;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: var(--size-500);
+    box-shadow: 0 2rem 3rem -1rem hsla(224, 23%, 55%, 0.4);
+    overflow: hidden;
+}
+
+.banner-image {
+    border-radius: var(--size-500) var(--size-500) 0 0;
+    max-width: auto;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: var(--size-600) var(--size-700);
+}
+
+.summary>* {
+    margin-top: var(--size-500);
+    line-height: 1.5;
+}
+
+.price-plan-table {
+    box-sizing: border-box;
+    min-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    place-items: center;
+    background-color: var(--clr-neutral-200);
+    padding-block: var(--size-500);
+}
+
+a {
+    font-weight: var(--fw-700);
+    color: var(--clr-secondary-500);
+}
+
+a:is(:hover, :focus) {
+    text-decoration: none;
+    color: hsl(245, 83%, 68%);
+}
+
+.price-plan {
+    margin-right: auto;
+}
+
+.plan {
+    color: var(--clr-neutral-800);
+    font-weight: var(--fw-900);
+}
+
+.price {
+    color: var(--clr-neutral-700);
+}
+
+/* button */
+
+button {
+    min-width: 100%;
+    padding: 1em;
+    background-color: var(--clr-secondary-500);
+    border: none;
+    border-radius: 0.625em;
+    color: var(--clr-neutral-200);
+    font-weight: var(--fw-900);
+}
+
+.payment-btn {
+    cursor: pointer;
+    box-shadow: 0 1rem 1rem var(--clr-accent-400);
+}
+
+.payment-btn:is(:hover, :focus-visible) {
+    background-color: hsl(245, 83%, 68%);
+}
+
+.cancel-btn {
+    color: var(--clr-neutral-700);
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.cancel-btn:is(:hover, :focus-visible) {
+    color: var(--clr-neutral-800);
+}
