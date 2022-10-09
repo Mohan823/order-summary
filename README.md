@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Product Preview card-Solution](https://github.com/Mohan823/product-preview-card-component.git)
-- Live Site URL: [Product Preview card-Live](https://mohan823.github.io/product-preview-card-component/)
+- Solution URL: [Order Summary - Solution](https://github.com/Mohan823/order-summary.git)
+- Live Site URL: [Order Summary - Live](https://mohan823.github.io/product-preview-card-component/)
 
 ## My process
 
