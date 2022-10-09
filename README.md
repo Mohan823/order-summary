@@ -10,6 +10,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
+  - [Trouble I am Facing](#trouble-i-am-facing)
 - [Author](#author)
 
 ## Overview
@@ -42,6 +43,13 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
+
+### Trouble I am Facing
+
+- I have in trouble when I m creating my mobile layout. because the container can't shrink itself. 
+- But after a cup of tea, I simply close my windows means laptop, and starts thinking. Suddenly a spark came to my mind😎 
+- Then come with solution the container isn,t overflowing itself due to that its not shrink. then i add "overflow: hidden;" to container. 
+-                        The problem is solved.🥰
 
 ## Author
 
