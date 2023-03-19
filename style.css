@@ -180,6 +180,8 @@ p {
     padding-block: var(--size-500);
 }
 
+
+
 .music-icon {
     margin-left: var(--size-500);
 }
@@ -238,4 +240,30 @@ button {
 
 .cancel-btn:is(:hover, :focus-visible) {
     color: var(--clr-neutral-800);
+}
+
+@media screen and (max-width:500px) {
+    .price-plan-table {
+        gap: 1rem;
+        grid-template-columns: unset;
+        justify-items: center;
+    }
+
+    .price-plan {
+        margin-right: unset;
+    }
+
+    a {
+        margin-right: unset;
+    }
+
+    .summary {
+        margin: 1rem 1.5rem;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .summary {
+        margin: 0.5rem 1rem;
+    }
 }
